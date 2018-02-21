@@ -18,7 +18,7 @@ You can specify the userName and userId. For analytic pruposes the userId needs 
 Be sure to provide the right id for the container in which the chat window will be placed.
 ```javascript
  <script type="text/javascript">
-        var chatWidget = BluBot.widget.new({userId: "test_user",userName:"question_asker"},"chat-container"); //root is the container id where the widget should be placed
+        var chatWidget = BluBot.widget.new({userId: "UNIQUE_ID_HERE",userName:"question_asker"},"chat-container"); //root is the container id where the widget should be placed
         //starts the widget
         chatWidget.start();
         chatWidget.onMessageReceived((activity) => {
