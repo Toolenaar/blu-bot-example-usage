@@ -38,7 +38,7 @@ chatWidget.onMessageReceived((activity) => {
 ```
 
 ## 5: Listen to messages:
-Each message that is send by the bot to the user can be monitored.
+Each message that is send by the bot to the user can be monitored using:
 ```javascript
 chatWidget.onMessageReceived((activity) => {
            console.log(activity);
