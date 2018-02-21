@@ -1,6 +1,11 @@
 # Setup
-
-1: Assign a container to host the chat widget:
+## 1: Import the library & fonts:
+To use the correct fonts be sure to import the Lato font from google fonts.
+```html
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<script type="text/javascript" src="https://blubot.blob.core.windows.net/jsc/blu-onboarding-bundle.js"></script></head>
+```
+## 2: Assign a container to host the chat widget:
 ```html
  <div id="root">
       <div id="chat-container">
@@ -8,7 +13,9 @@
     </div>
 ```
 
-2: Create the chat widget
+## 3: Create the chat widget:
+You can specify the userName and userId. For analytic pruposes the userId needs to be unique. If logging in with an anonymous user, a GUID will suffice.
+Be sure to provide the right id for the container in which the chat window will be placed.
 ```javascript
  <script type="text/javascript">
         var chatWidget = BluBot.widget.new({userId: "test_user",userName:"question_asker"},"chat-container"); //root is the container id where the widget should be placed
@@ -21,7 +28,7 @@
     </script>
 ```
 
-3: Start the conversation
+## 4: Start the conversation:
 To start the conversation you need to run the start command on the widget
 ```javascript
 chatWidget.onMessageReceived((activity) => {
@@ -29,12 +36,11 @@ chatWidget.onMessageReceived((activity) => {
         });
 ```
 
-4: Listen to messages
-Each message that is send by the bot to the user can be monitored using:
+## 5: Listen to messages:
+Each message that is send by the bot to the user can be monitored.
 ```javascript
 chatWidget.onMessageReceived((activity) => {
            console.log(activity);
         });
 ```
 
-# Styles
