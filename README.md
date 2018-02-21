@@ -31,9 +31,7 @@ Be sure to provide the right id for the container in which the chat window will 
 ## 4: Start the conversation:
 To start the conversation you need to run the start command on the widget
 ```javascript
-chatWidget.onMessageReceived((activity) => {
-    console.log(activity);
-});
+chatWidget.start();
 ```
 
 ## 5: Listen to messages:
