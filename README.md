@@ -5,7 +5,8 @@ To use the correct fonts be sure to import the Lato font from google fonts.
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <script type="text/javascript" src="https://blubot.blob.core.windows.net/jsc/blu-onboarding-bundle.js"></script></head>
 ```
-## 2: Assign a container to host the chat widget:
+## 2: Assign a container & position it using css:
+Assign a container in which the chat window will be hosted, and position it using css. Remember the id for the next step.
 ```html
  <div id="root">
       <div id="chat-container">
