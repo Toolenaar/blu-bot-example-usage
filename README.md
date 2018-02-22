@@ -1,4 +1,7 @@
 # Setup
+
+See index.html for all code
+
 ## 1: Import the library & fonts:
 To use the correct fonts be sure to import the Lato font from google fonts.
 ```html
